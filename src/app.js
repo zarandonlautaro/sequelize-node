@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/', (req, res) => res.json({ clave: 'con el server' }));
+app.use('/', (req, res) => res.send(<head>Hola</head>));
 
 app.listen(PORT, () => {
   console.log('Servidor corriendo en el puerto' + PORT);
